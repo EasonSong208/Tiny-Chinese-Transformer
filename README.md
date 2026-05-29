@@ -1,3 +1,13 @@
+## Quick Start
+
+```bash
+git clone https://github.com/EasonSong208/Tiny-Chinese-Transformer.git
+cd Tiny-Chinese-Transformer
+pip install -r requirements.txt
+```
+
+If possible ,plz read these below~
+  
 ## 项目文件说明
 
 本项目是一个从零实现的小型 GPT-like Transformer 中文字符级语言模型。项目目标不是训练一个可实用的大语言模型，而是完整体验 Transformer 语言模型从数据读取、模型构建、训练、保存 checkpoint 到文本生成的基本流程。
