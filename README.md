@@ -7,6 +7,16 @@ pip install -r requirements.txt
 ```
 
 If possible ,plz read these below~
+
+# Tiny Chinese Transformer
+
+A tiny GPT-like Chinese character-level language model implemented from scratch with PyTorch.
+
+This project is designed for learning how Transformer language models work, including data loading, masked self-attention, training, checkpointing, and text generation.
+
+It is small enough to train on an RTX 4060, but still demonstrates important language-modeling behaviors such as style imitation, overfitting, memorization, and unstable long-context generation.
+
+
   
 ## 项目文件说明
 
