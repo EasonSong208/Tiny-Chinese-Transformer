@@ -1,6 +1,3 @@
 torch>=2.0.0
 tqdm>=4.66.0
 numpy>=1.24.0
-
-# 建议使用cuda，建议GPU强于或等于 RTX4060
-# 如果需要 GPU 训练，请根据自己的 CUDA 版本到 PyTorch 官网选择对应安装命令。
