@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Training data
+TrainingData/*
+!TrainingData/README.md
+
+Transformers/TrainingData/*
+!Transformers/TrainingData/README.md
+
+# Model checkpoints
+checkpoints/*
+!checkpoints/README.md
+
+Transformers/checkpoints/*
+!Transformers/checkpoints/README.md
+
+*.pth
+*.pt
+*.ckpt
+
+# Windows metadata
+*.Zone.Identifier
+
+# Logs
+*.log
