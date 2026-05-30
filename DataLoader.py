@@ -4,6 +4,21 @@
 import torch
 from torch.utils.data import Dataset, DataLoader
 class TextDataset(Dataset):
+    def basic_clean_text(text):
+        text = text.replace("\r\n", "\n").replace("\r", "\n")
+        text = text.replace("\u3000", " ")
+        text = text.replace("\t", " ")
+    
+        # 多个空行压成最多两个
+        while "\n\n\n" in text:
+            text = text.replace("\n\n\n", "\n\n")
+    
+        # 多个空格压成一个
+        while "  " in text:
+            text = text.replace("  ", " ")
+    
+        return text.strip()
+    
     def __init__(self, text, block_size):
         self.block_size = block_size
         self.vocab = sorted(set(text))
